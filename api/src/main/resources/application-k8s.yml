@@ -1,0 +1,16 @@
+spring:
+ datasource:
+  url: jdbc:postgresql://postgres-service.taller7-api.svc.cluster.local:2323/api-db
+  username: postgres
+  password: postgres
+  driver-class-name: org.postgresql.Driver
+ flyway:
+  enabled: true
+  url: jdbc:postgresql://postgres-service.taller7-api.svc.cluster.local:2323/api-db
+  user: postgres
+  password: postgres
+  driver-class-name: org.postgresql.Driver
+ jpa:
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+ port: 8082

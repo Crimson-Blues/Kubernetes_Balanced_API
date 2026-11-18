@@ -1,0 +1,11 @@
+spring:
+ datasource:
+  url: jdbc:postgresql://postgres-service.taller7-api.svc.cluster.local:2323/api-db
+  username: postgres
+  password: postgres
+ flyway:
+  url: jdbc:postgresql://postgres-service.taller7-api.svc.cluster.local:2323/api-db
+  user: postgres
+  password: postgres
+server:
+ port: 8082
